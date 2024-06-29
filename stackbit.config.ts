@@ -1,3 +1,3 @@
-import lirioConfig from "lirio/stackbit";
+import { lirioConfig } from "lirio/stackbit";
 
-export default lirioConfig;
+export default { ...lirioConfig(__dirname), useESM: true};

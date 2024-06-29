@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
+	import "lirio/styles";
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
