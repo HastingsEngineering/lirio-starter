@@ -45,6 +45,7 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.6.6",
+    "@sveltejs/adapter-netlify": "^4.3.0",
     "highlight.js": "11.9.0",
     "lirio": "^0.0.2"
   }
