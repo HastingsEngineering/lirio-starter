@@ -12,7 +12,7 @@ export async function entries() {
     const pageFiles = Object.entries(import.meta.glob("/src/content/pages/*.json"));
     const pages = await Promise.all(pageFiles.map(async ([path, resolver]) => {
         let file = await resolver();     
-        if (file.collection === undefined) {
+        if (file.collection === "") {
             const collection = path.slice(19, -5);
             return {collection}
         }   
@@ -30,7 +30,7 @@ export async function load({params}) {
     } catch(err) {
         try {
             const page = await import(`../../content/pages/${params.collection}.json`);
-            if (page.collection === undefined) {
+            if (page.collection === "") {
                 return { PageContent: page.default, path: `src/content/pages/${params.collection}.json`};
             }
             throw error(404, "Not Found");

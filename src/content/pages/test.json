@@ -1,6 +1,7 @@
 {
     "type": "Page",
     "slug": "test",
-    "title": "Test",
-    "description": "Test"
+    "title": "Test Page",
+    "description": "Test",
+    "collection": "src\\content\\collections\\test.json"
 }

@@ -1,0 +1,15 @@
+{
+    "type": "Collection",
+    "slug": "test",
+    "title": "Test",
+    "description": "Test",
+    "blocks": [
+        {
+            "type": "HeaderSimpleWithEyebrow",
+            "Heading": "Heading",
+            "EyebrowText": "Eyebrow Text",
+            "Body": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+            "blockReferenceID": "header-simple-with-eyebrow"
+        }
+    ]
+}

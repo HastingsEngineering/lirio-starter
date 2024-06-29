@@ -19,7 +19,7 @@ export async function entries() {
 export async function load({params}) {
     try {
         const page = await import(`../../../content/pages/${params.slug}.json`);
-        if (page.collection === params.collection) {
+        if (page.collection.slice(24, -5) === params.collection) {
             return { PageContent: page.default, path: `src/content/pages/${params.slug}.json`}
         }
         throw error(404, "Not Found");

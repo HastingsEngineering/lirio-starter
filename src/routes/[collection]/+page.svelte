@@ -2,4 +2,8 @@
     export let data;
 </script>
 
-{data.path}
+<div data-sb-object-id={data.path}>
+    {data.path}
+
+    {data.PageContent.title}
+</div>
