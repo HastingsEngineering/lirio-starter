@@ -3,5 +3,5 @@
     "slug": "test",
     "title": "Test Page",
     "description": "Test",
-    "collection": "src\\content\\collections\\test.json"
+    "collection": "src/content/collections/test.json"
 }
