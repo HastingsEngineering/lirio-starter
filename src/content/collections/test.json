@@ -8,8 +8,40 @@
             "type": "HeaderSimpleWithEyebrow",
             "Heading": "Heading",
             "EyebrowText": "Eyebrow Text",
+            "Body": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem \ncupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+            "blockReferenceID": "header-simple-with-eyebrow",
+            "Styles": {
+                "self": {
+                    "width": "narrow",
+                    "textAlign": "center"
+                }
+            }
+        },
+        {
+            "type": "HeaderSimpleWithEyebrow",
+            "Heading": "Heading",
+            "EyebrowText": "Eyebrow Text",
             "Body": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
-            "blockReferenceID": "header-simple-with-eyebrow"
+            "blockReferenceID": "header-simple-with-eyebrow",
+            "Styles": {
+                "self": {
+                    "width": "wide",
+                    "textAlign": "left"
+                }
+            }
+        },
+        {
+            "type": "HeaderSimpleWithEyebrow",
+            "Heading": "Heading",
+            "EyebrowText": "Eyebrow Text",
+            "Body": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+            "blockReferenceID": "header-simple-with-eyebrow",
+            "Styles": {
+                "self": {
+                    "width": "wide",
+                    "textAlign": "right"
+                }
+            }
         }
     ]
 }
