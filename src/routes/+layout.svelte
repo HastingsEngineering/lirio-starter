@@ -20,7 +20,7 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
-	import { Menu } from 'lirio/components';
+	import { Footer, Menu } from 'lirio/components';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	// Drawer
@@ -33,10 +33,7 @@
 
 <Drawer>
 	{#if $drawerStore.id === "mobile-menu"}
-		<Menu data={{
-			Mobile: true,
-			...settings?.Menu
-		}}/>
+		<Menu data={{Mobile: true, ...settings?.Menu}}/>
 	{/if}
 </Drawer>
 
@@ -48,5 +45,7 @@
 		}}/>
 	</svelte:fragment>
 
-	<slot />
+	<slot /><svelte:fragment slot="pageFooter">
+		<Footer data={{...settings?.Footer}}/>
+	</svelte:fragment>
 </AppShell>

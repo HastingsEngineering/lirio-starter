@@ -3,5 +3,51 @@
     "slug": "test",
     "title": "Test Page",
     "description": "Test",
-    "collection": "src/content/collections/test.json"
+    "collection": "src\\content\\collections\\test.json",
+    "blocks": [
+        {
+            "type": "TeamWithImageAndParagraph",
+            "blockReferenceID": "team-with-image-and-paragraph",
+            "Heading": "Our Team",
+            "Description": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+            "TeamCards": [
+                {
+                    "type": "TeamCard",
+                    "BackgroundImage": {
+                        "type": "BackgroundImage",
+                        "Image": "\\favicon.png",
+                        "AltText": "Test",
+                        "DarkeningPercentage": 0,
+                        "Styles": {
+                            "self": {
+                                "width": "full"
+                            }
+                        }
+                    },
+                    "Name": "Member 1",
+                    "Title": "Team Member",
+                    "Description": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+                }
+            ]
+        },
+        {
+            "type": "ContentWithStickyImage",
+            "blockReferenceID": "content-with-sticky-image",
+            "Heading": "Heading",
+            "EyebrowText": "Eyebrow Text",
+            "Body": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.\n\n*   Bullet 1\n\n*   Bullet 2\n\n*   Bullet 3\n\n![](https://images.unsplash.com/photo-1693341052623-c70686d937a4?w=500\\&auto=format\\&fit=crop\\&q=60\\&ixlib=rb-4.0.3\\&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8)\n\n",
+            "ImageLocation": "left",
+            "BackgroundImage": {
+                "type": "BackgroundImage",
+                "Image": "\\favicon.png",
+                "AltText": "Test",
+                "DarkeningPercentage": 0,
+                "Styles": {
+                    "self": {
+                        "width": "full"
+                    }
+                }
+            }
+        }
+    ]
 }

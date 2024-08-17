@@ -20,5 +20,31 @@
                 "Url": "/test"
             }
         ]
+    },
+    "Footer": {
+        "Icon": {
+            "type": "Icon",
+            "Image": "\\favicon.png",
+            "AltText": "Home",
+            "Url": ""
+        },
+        "MissionStatement": "We do stuff",
+        "Categories": [
+            {
+                "Label": "Test Pages",
+                "Links": [
+                    {
+                        "type": "Link",
+                        "Label": "Collection",
+                        "Url": "/test"
+                    },
+                    {
+                        "type": "Link",
+                        "Label": "Page",
+                        "Url": "/test/test"
+                    }
+                ]
+            }
+        ]
     }
 }
