@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import { PUBLIC_OS } from '$env/static/public';
 
 // Tells Svelte to prerender all of the pages in the root of the /src/content/collections route
 export async function entries() {
@@ -26,12 +27,14 @@ export async function entries() {
 export async function load({params}) {
     try {
         const page = await import(`../../content/collections/${params.collection}.json`);
-        return { PageContent: page.default, path: `src/content/collections/${params.collection}.json`}
+        let path = PUBLIC_OS === 'win' ? `src\\content\\collections\\${params.collection}.json` : `src/content/collections/${params.collection}.json`;
+        return { PageContent: page.default, path };
     } catch(err) {
         try {
             const page = await import(`../../content/pages/${params.collection}.json`);
             if (page.collection === "") {
-                return { PageContent: page.default, path: `src/content/pages/${params.collection}.json`};
+                let path = PUBLIC_OS === 'win' ? `src\\content\\pages\\${params.collection}.json` : `src/content/pages/${params.collection}.json`;
+                return { PageContent: page.default, path };
             }
             throw error(404, "Not Found");
         }
