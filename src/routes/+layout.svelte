@@ -28,14 +28,14 @@
 	const drawerStore = getDrawerStore();
 
 	export let data;
-	let { menuData } = data;
+	let { settings } = data;
 </script>
 
 <Drawer>
 	{#if $drawerStore.id === "mobile-menu"}
 		<Menu data={{
 			Mobile: true,
-			...menuData
+			...settings?.Menu
 		}}/>
 	{/if}
 </Drawer>
@@ -44,7 +44,7 @@
 	<svelte:fragment slot="header">
 		<Menu data={{
 			Mobile: false,
-			...menuData
+			...settings?.Menu
 		}}/>
 	</svelte:fragment>
 

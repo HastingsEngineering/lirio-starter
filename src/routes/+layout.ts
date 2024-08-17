@@ -2,8 +2,8 @@
 /** @type {import('./$types').PageLoad} */
 export async function load({params}) {
     try {
-        const menuData = await import(`../content/data/menu.json`);
-        return { menuData: menuData.default };
+        const globalSettings = await import(`../content/data/settings.json`);
+        return { settings: globalSettings.default };
     } catch(err) {
         console.log(err);
     }

@@ -1,0 +1,24 @@
+{
+    "type": "GlobalSettings",
+    "Menu": {
+        "Icon": {
+            "type": "Icon",
+            "Image": "\\favicon.png",
+            "AltText": "Home",
+            "Url": "/"
+        },
+        "Menus": [],
+        "Links": [
+            {
+                "type": "Link",
+                "Label": "Page",
+                "Url": "/test/test"
+            },
+            {
+                "type": "Link",
+                "Label": "Collection",
+                "Url": "/test"
+            }
+        ]
+    }
+}
