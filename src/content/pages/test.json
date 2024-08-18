@@ -129,13 +129,6 @@
                 "AltText": "Alt"
             },
             "ImageLocation": "right"
-        },
-        {
-            "type": "CTAWithImage",
-            "blockReferenceID": "cta-with-image",
-            "Heading": "Heading",
-            "Body": "Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur quam arcu varius urna dui magnis. \n\n- Bullet",
-            "Buttons": []
         }
     ]
 }
