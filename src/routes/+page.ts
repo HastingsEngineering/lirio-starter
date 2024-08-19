@@ -5,7 +5,7 @@ import { error } from '@sveltejs/kit';
 export async function load({params}) {
     try {
         const page = await import(`../content/home.json`);
-        return { PageContent: page.default}
+        return { PageContent: page.default, path: "src/content/home.json"}
     } catch(err) {
         throw error(404, "Not Found")
     }
