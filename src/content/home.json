@@ -1,0 +1,20 @@
+{
+    "type": "Homepage",
+    "title": "Homepage",
+    "description": "Homepage of Lirio Starter",
+    "blocks": [
+        {
+            "type": "HeaderSimpleWithEyebrowBackground",
+            "Heading": "Lirio Starter",
+            "EyebrowText": "",
+            "Body": "Lirio is a useful framework for Netlify Create and Svelte",
+            "blockReferenceID": "header-simple-with-eyebrow-background",
+            "Styles": {
+                "self": {
+                    "width": "wide",
+                    "textAlign": "left"
+                }
+            }
+        }
+    ]
+}
