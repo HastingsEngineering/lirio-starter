@@ -19,7 +19,8 @@
                 "Label": "Collection",
                 "Url": "/test"
             }
-        ]
+        ],
+        "ShowShareButton": true
     },
     "Footer": {
         "Icon": {
@@ -46,5 +47,6 @@
                 ]
             }
         ]
-    }
+    },
+    "BaseURL": "localhost:3000"
 }
